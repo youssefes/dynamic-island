@@ -11,27 +11,43 @@
 		11AA9EA32CB55DA500E7EA91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EA22CB55DA500E7EA91 /* ContentView.swift */; };
 		11AA9EA52CB55DA700E7EA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AA9EA42CB55DA700E7EA91 /* Assets.xcassets */; };
 		11AA9EA92CB55DA700E7EA91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AA9EA82CB55DA700E7EA91 /* Preview Assets.xcassets */; };
-		11AA9EB32CB55DA700E7EA91 /* dynamic_islandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EB22CB55DA700E7EA91 /* dynamic_islandTests.swift */; };
-		11AA9EBD2CB55DA700E7EA91 /* dynamic_islandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EBC2CB55DA700E7EA91 /* dynamic_islandUITests.swift */; };
-		11AA9EBF2CB55DA700E7EA91 /* dynamic_islandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EBE2CB55DA700E7EA91 /* dynamic_islandUITestsLaunchTests.swift */; };
+		11AA9ECC2CB55E8F00E7EA91 /* CircleTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9ECB2CB55E8F00E7EA91 /* CircleTimerView.swift */; };
+		11AA9ED42CB5619500E7EA91 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AA9ED32CB5619500E7EA91 /* WidgetKit.framework */; };
+		11AA9ED62CB5619500E7EA91 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AA9ED52CB5619500E7EA91 /* SwiftUI.framework */; };
+		11AA9ED92CB5619500E7EA91 /* TimerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9ED82CB5619500E7EA91 /* TimerWidgetBundle.swift */; };
+		11AA9EDB2CB5619500E7EA91 /* TimerWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EDA2CB5619500E7EA91 /* TimerWidgetLiveActivity.swift */; };
+		11AA9EDD2CB5619500E7EA91 /* TimerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EDC2CB5619500E7EA91 /* TimerWidget.swift */; };
+		11AA9EE12CB5619700E7EA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AA9EE02CB5619700E7EA91 /* Assets.xcassets */; };
+		11AA9EE52CB5619700E7EA91 /* TimerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 11AA9ED12CB5619500E7EA91 /* TimerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11AA9EEB2CB562C600E7EA91 /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EEA2CB562C600E7EA91 /* TimerAttributes.swift */; };
+		11AA9EEC2CB562C600E7EA91 /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EEA2CB562C600E7EA91 /* TimerAttributes.swift */; };
+		11AA9EEE2CB567A600E7EA91 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EED2CB567A600E7EA91 /* LiveActivityManager.swift */; };
+		11AA9EEF2CB567A600E7EA91 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EED2CB567A600E7EA91 /* LiveActivityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11AA9EAF2CB55DA700E7EA91 /* PBXContainerItemProxy */ = {
+		11AA9EE32CB5619700E7EA91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11AA9E952CB55DA500E7EA91 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 11AA9E9C2CB55DA500E7EA91;
-			remoteInfo = "dynamic-island";
-		};
-		11AA9EB92CB55DA700E7EA91 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11AA9E952CB55DA500E7EA91 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 11AA9E9C2CB55DA500E7EA91;
-			remoteInfo = "dynamic-island";
+			remoteGlobalIDString = 11AA9ED02CB5619500E7EA91;
+			remoteInfo = TimerWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11AA9EE92CB5619700E7EA91 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				11AA9EE52CB5619700E7EA91 /* TimerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11AA9E9D2CB55DA500E7EA91 /* dynamic-island.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dynamic-island.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,11 +56,18 @@
 		11AA9EA42CB55DA700E7EA91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11AA9EA62CB55DA700E7EA91 /* dynamic_island.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dynamic_island.entitlements; sourceTree = "<group>"; };
 		11AA9EA82CB55DA700E7EA91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		11AA9EAE2CB55DA700E7EA91 /* dynamic-islandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dynamic-islandTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11AA9EB22CB55DA700E7EA91 /* dynamic_islandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamic_islandTests.swift; sourceTree = "<group>"; };
-		11AA9EB82CB55DA700E7EA91 /* dynamic-islandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dynamic-islandUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11AA9EBC2CB55DA700E7EA91 /* dynamic_islandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamic_islandUITests.swift; sourceTree = "<group>"; };
-		11AA9EBE2CB55DA700E7EA91 /* dynamic_islandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dynamic_islandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11AA9ECB2CB55E8F00E7EA91 /* CircleTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTimerView.swift; sourceTree = "<group>"; };
+		11AA9ED12CB5619500E7EA91 /* TimerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AA9ED32CB5619500E7EA91 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		11AA9ED52CB5619500E7EA91 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		11AA9ED82CB5619500E7EA91 /* TimerWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWidgetBundle.swift; sourceTree = "<group>"; };
+		11AA9EDA2CB5619500E7EA91 /* TimerWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		11AA9EDC2CB5619500E7EA91 /* TimerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWidget.swift; sourceTree = "<group>"; };
+		11AA9EE02CB5619700E7EA91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11AA9EE22CB5619700E7EA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AA9EEA2CB562C600E7EA91 /* TimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAttributes.swift; sourceTree = "<group>"; };
+		11AA9EED2CB567A600E7EA91 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		11AA9EF02CB5768800E7EA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +78,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11AA9EAB2CB55DA700E7EA91 /* Frameworks */ = {
+		11AA9ECE2CB5619500E7EA91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11AA9EB52CB55DA700E7EA91 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				11AA9ED62CB5619500E7EA91 /* SwiftUI.framework in Frameworks */,
+				11AA9ED42CB5619500E7EA91 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				11AA9E9F2CB55DA500E7EA91 /* dynamic-island */,
-				11AA9EB12CB55DA700E7EA91 /* dynamic-islandTests */,
-				11AA9EBB2CB55DA700E7EA91 /* dynamic-islandUITests */,
+				11AA9ED72CB5619500E7EA91 /* TimerWidget */,
+				11AA9ED22CB5619500E7EA91 /* Frameworks */,
 				11AA9E9E2CB55DA500E7EA91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				11AA9E9D2CB55DA500E7EA91 /* dynamic-island.app */,
-				11AA9EAE2CB55DA700E7EA91 /* dynamic-islandTests.xctest */,
-				11AA9EB82CB55DA700E7EA91 /* dynamic-islandUITests.xctest */,
+				11AA9ED12CB5619500E7EA91 /* TimerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,11 +112,15 @@
 		11AA9E9F2CB55DA500E7EA91 /* dynamic-island */ = {
 			isa = PBXGroup;
 			children = (
+				11AA9EF02CB5768800E7EA91 /* Info.plist */,
 				11AA9EA02CB55DA500E7EA91 /* dynamic_islandApp.swift */,
 				11AA9EA22CB55DA500E7EA91 /* ContentView.swift */,
+				11AA9ECB2CB55E8F00E7EA91 /* CircleTimerView.swift */,
 				11AA9EA42CB55DA700E7EA91 /* Assets.xcassets */,
 				11AA9EA62CB55DA700E7EA91 /* dynamic_island.entitlements */,
 				11AA9EA72CB55DA700E7EA91 /* Preview Content */,
+				11AA9EEA2CB562C600E7EA91 /* TimerAttributes.swift */,
+				11AA9EED2CB567A600E7EA91 /* LiveActivityManager.swift */,
 			);
 			path = "dynamic-island";
 			sourceTree = "<group>";
@@ -112,21 +133,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		11AA9EB12CB55DA700E7EA91 /* dynamic-islandTests */ = {
+		11AA9ED22CB5619500E7EA91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11AA9EB22CB55DA700E7EA91 /* dynamic_islandTests.swift */,
+				11AA9ED32CB5619500E7EA91 /* WidgetKit.framework */,
+				11AA9ED52CB5619500E7EA91 /* SwiftUI.framework */,
 			);
-			path = "dynamic-islandTests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11AA9EBB2CB55DA700E7EA91 /* dynamic-islandUITests */ = {
+		11AA9ED72CB5619500E7EA91 /* TimerWidget */ = {
 			isa = PBXGroup;
 			children = (
-				11AA9EBC2CB55DA700E7EA91 /* dynamic_islandUITests.swift */,
-				11AA9EBE2CB55DA700E7EA91 /* dynamic_islandUITestsLaunchTests.swift */,
+				11AA9ED82CB5619500E7EA91 /* TimerWidgetBundle.swift */,
+				11AA9EDA2CB5619500E7EA91 /* TimerWidgetLiveActivity.swift */,
+				11AA9EDC2CB5619500E7EA91 /* TimerWidget.swift */,
+				11AA9EE02CB5619700E7EA91 /* Assets.xcassets */,
+				11AA9EE22CB5619700E7EA91 /* Info.plist */,
 			);
-			path = "dynamic-islandUITests";
+			path = TimerWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,51 +164,34 @@
 				11AA9E992CB55DA500E7EA91 /* Sources */,
 				11AA9E9A2CB55DA500E7EA91 /* Frameworks */,
 				11AA9E9B2CB55DA500E7EA91 /* Resources */,
+				11AA9EE92CB5619700E7EA91 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11AA9EE42CB5619700E7EA91 /* PBXTargetDependency */,
 			);
 			name = "dynamic-island";
 			productName = "dynamic-island";
 			productReference = 11AA9E9D2CB55DA500E7EA91 /* dynamic-island.app */;
 			productType = "com.apple.product-type.application";
 		};
-		11AA9EAD2CB55DA700E7EA91 /* dynamic-islandTests */ = {
+		11AA9ED02CB5619500E7EA91 /* TimerWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11AA9EC52CB55DA700E7EA91 /* Build configuration list for PBXNativeTarget "dynamic-islandTests" */;
+			buildConfigurationList = 11AA9EE62CB5619700E7EA91 /* Build configuration list for PBXNativeTarget "TimerWidgetExtension" */;
 			buildPhases = (
-				11AA9EAA2CB55DA700E7EA91 /* Sources */,
-				11AA9EAB2CB55DA700E7EA91 /* Frameworks */,
-				11AA9EAC2CB55DA700E7EA91 /* Resources */,
+				11AA9ECD2CB5619500E7EA91 /* Sources */,
+				11AA9ECE2CB5619500E7EA91 /* Frameworks */,
+				11AA9ECF2CB5619500E7EA91 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				11AA9EB02CB55DA700E7EA91 /* PBXTargetDependency */,
 			);
-			name = "dynamic-islandTests";
-			productName = "dynamic-islandTests";
-			productReference = 11AA9EAE2CB55DA700E7EA91 /* dynamic-islandTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		11AA9EB72CB55DA700E7EA91 /* dynamic-islandUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11AA9EC82CB55DA700E7EA91 /* Build configuration list for PBXNativeTarget "dynamic-islandUITests" */;
-			buildPhases = (
-				11AA9EB42CB55DA700E7EA91 /* Sources */,
-				11AA9EB52CB55DA700E7EA91 /* Frameworks */,
-				11AA9EB62CB55DA700E7EA91 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11AA9EBA2CB55DA700E7EA91 /* PBXTargetDependency */,
-			);
-			name = "dynamic-islandUITests";
-			productName = "dynamic-islandUITests";
-			productReference = 11AA9EB82CB55DA700E7EA91 /* dynamic-islandUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = TimerWidgetExtension;
+			productName = TimerWidgetExtension;
+			productReference = 11AA9ED12CB5619500E7EA91 /* TimerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,13 +206,8 @@
 					11AA9E9C2CB55DA500E7EA91 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					11AA9EAD2CB55DA700E7EA91 = {
+					11AA9ED02CB5619500E7EA91 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 11AA9E9C2CB55DA500E7EA91;
-					};
-					11AA9EB72CB55DA700E7EA91 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 11AA9E9C2CB55DA500E7EA91;
 					};
 				};
 			};
@@ -222,8 +225,7 @@
 			projectRoot = "";
 			targets = (
 				11AA9E9C2CB55DA500E7EA91 /* dynamic-island */,
-				11AA9EAD2CB55DA700E7EA91 /* dynamic-islandTests */,
-				11AA9EB72CB55DA700E7EA91 /* dynamic-islandUITests */,
+				11AA9ED02CB5619500E7EA91 /* TimerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -238,17 +240,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11AA9EAC2CB55DA700E7EA91 /* Resources */ = {
+		11AA9ECF2CB5619500E7EA91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11AA9EB62CB55DA700E7EA91 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				11AA9EE12CB5619700E7EA91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,40 +255,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AA9EEB2CB562C600E7EA91 /* TimerAttributes.swift in Sources */,
 				11AA9EA32CB55DA500E7EA91 /* ContentView.swift in Sources */,
 				11AA9EA12CB55DA500E7EA91 /* dynamic_islandApp.swift in Sources */,
+				11AA9EEE2CB567A600E7EA91 /* LiveActivityManager.swift in Sources */,
+				11AA9ECC2CB55E8F00E7EA91 /* CircleTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11AA9EAA2CB55DA700E7EA91 /* Sources */ = {
+		11AA9ECD2CB5619500E7EA91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11AA9EB32CB55DA700E7EA91 /* dynamic_islandTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11AA9EB42CB55DA700E7EA91 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11AA9EBD2CB55DA700E7EA91 /* dynamic_islandUITests.swift in Sources */,
-				11AA9EBF2CB55DA700E7EA91 /* dynamic_islandUITestsLaunchTests.swift in Sources */,
+				11AA9EDB2CB5619500E7EA91 /* TimerWidgetLiveActivity.swift in Sources */,
+				11AA9EEF2CB567A600E7EA91 /* LiveActivityManager.swift in Sources */,
+				11AA9ED92CB5619500E7EA91 /* TimerWidgetBundle.swift in Sources */,
+				11AA9EEC2CB562C600E7EA91 /* TimerAttributes.swift in Sources */,
+				11AA9EDD2CB5619500E7EA91 /* TimerWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		11AA9EB02CB55DA700E7EA91 /* PBXTargetDependency */ = {
+		11AA9EE42CB5619700E7EA91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 11AA9E9C2CB55DA500E7EA91 /* dynamic-island */;
-			targetProxy = 11AA9EAF2CB55DA700E7EA91 /* PBXContainerItemProxy */;
-		};
-		11AA9EBA2CB55DA700E7EA91 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 11AA9E9C2CB55DA500E7EA91 /* dynamic-island */;
-			targetProxy = 11AA9EB92CB55DA700E7EA91 /* PBXContainerItemProxy */;
+			target = 11AA9ED02CB5619500E7EA91 /* TimerWidgetExtension */;
+			targetProxy = 11AA9EE32CB5619700E7EA91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -349,6 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,6 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -414,6 +405,7 @@
 		11AA9EC32CB55DA700E7EA91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "dynamic-island/dynamic_island.entitlements";
@@ -424,6 +416,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dynamic-island/Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,7 +428,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -442,16 +436,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-island";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		11AA9EC42CB55DA700E7EA91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "dynamic-island/dynamic_island.entitlements";
@@ -462,6 +458,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dynamic-island/Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,7 +470,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -480,100 +478,70 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-island";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		11AA9EE72CB5619700E7EA91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2ZYT8H56Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-island.TimerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
-		};
-		11AA9EC62CB55DA700E7EA91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J2ZYT8H56Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-islandTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dynamic-island.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dynamic-island";
-			};
 			name = Debug;
 		};
-		11AA9EC72CB55DA700E7EA91 /* Release */ = {
+		11AA9EE82CB5619700E7EA91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2ZYT8H56Z;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-islandTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-island.TimerWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dynamic-island.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dynamic-island";
-			};
-			name = Release;
-		};
-		11AA9EC92CB55DA700E7EA91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J2ZYT8H56Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-islandUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "dynamic-island";
-			};
-			name = Debug;
-		};
-		11AA9ECA2CB55DA700E7EA91 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J2ZYT8H56Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dynamic-island.dynamic-islandUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "dynamic-island";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -598,20 +566,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11AA9EC52CB55DA700E7EA91 /* Build configuration list for PBXNativeTarget "dynamic-islandTests" */ = {
+		11AA9EE62CB5619700E7EA91 /* Build configuration list for PBXNativeTarget "TimerWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11AA9EC62CB55DA700E7EA91 /* Debug */,
-				11AA9EC72CB55DA700E7EA91 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		11AA9EC82CB55DA700E7EA91 /* Build configuration list for PBXNativeTarget "dynamic-islandUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11AA9EC92CB55DA700E7EA91 /* Debug */,
-				11AA9ECA2CB55DA700E7EA91 /* Release */,
+				11AA9EE72CB5619700E7EA91 /* Debug */,
+				11AA9EE82CB5619700E7EA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
