@@ -23,6 +23,8 @@
 		11AA9EEC2CB562C600E7EA91 /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EEA2CB562C600E7EA91 /* TimerAttributes.swift */; };
 		11AA9EEE2CB567A600E7EA91 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EED2CB567A600E7EA91 /* LiveActivityManager.swift */; };
 		11AA9EEF2CB567A600E7EA91 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EED2CB567A600E7EA91 /* LiveActivityManager.swift */; };
+		11B2F7262CB677F3009D11EF /* TimerWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EDA2CB5619500E7EA91 /* TimerWidgetLiveActivity.swift */; };
+		11B2F7272CB67819009D11EF /* TimerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA9EDC2CB5619500E7EA91 /* TimerWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B2F7262CB677F3009D11EF /* TimerWidgetLiveActivity.swift in Sources */,
 				11AA9EEB2CB562C600E7EA91 /* TimerAttributes.swift in Sources */,
+				11B2F7272CB67819009D11EF /* TimerWidget.swift in Sources */,
 				11AA9EA32CB55DA500E7EA91 /* ContentView.swift in Sources */,
 				11AA9EA12CB55DA500E7EA91 /* dynamic_islandApp.swift in Sources */,
 				11AA9EEE2CB567A600E7EA91 /* LiveActivityManager.swift in Sources */,
