@@ -35,8 +35,14 @@ struct TimerWidgetLiveActivity: Widget {
                 }
                 .padding(8)
             } minimal: {
-                Image(systemName: "timer")
-                    .foregroundColor(Color.green)
+                HStack{
+                    Text(context.state.duration)
+                        .minimumScaleFactor(0.8)
+                        .contentTransition(.numericText())
+                        .monospacedDigit()
+                        .foregroundColor(Color.green)
+                }
+                .padding(8)
             }
         }
     }

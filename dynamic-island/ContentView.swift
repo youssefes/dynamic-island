@@ -63,20 +63,26 @@ struct ContentView: View {
         }
         .padding()
         .onReceive(timer) { time in
-            if (isTimerRunning) {
+            if (isTimerRunning)  {
                 interval = Date().timeIntervalSince(startTime)
                 duration = totalDuration - interval
                 progress = (duration / totalDuration)
                 if duration <= 0 {
                     stopTimer()
                 } else {
-                    guard let id = activity?.id else { return }
-                    print(time)
-                    LiveActivityManager().updateActivity(
-                        activity: id,
-                        duration: duration,
-                        progress: progress
-                    )
+                    if duration < 60 {
+                        guard let id = activity?.id else {
+                            activity = LiveActivityManager().startActivity(duration: duration, progress: progress)
+                            return
+                        }
+                        print(time)
+                        LiveActivityManager().updateActivity(
+                            activity: id,
+                            duration: duration,
+                            progress: progress
+                        )
+                    }
+                  
                 }
             }
         }
@@ -93,7 +99,7 @@ struct ContentView: View {
         self.timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
         // Insert the following line here to start the activity.
         
-        activity = LiveActivityManager().startActivity(duration: duration, progress: progress)
+       
         isTimerRunning.toggle()
     }
     
@@ -106,6 +112,38 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
+struct AnimatedMoneyTransferView: View {
+    @State private var currentFrame = 0
+    let frameCount = 3 // Number of frames in the animation
+    let animationInterval = 0.3 // Time interval between frames (in seconds)
+
+    // Timer to cycle through images
+    var timer = Timer.publish(every: 0.3, on: .main, in: .common).autoconnect()
+
+    var body: some View {
+        VStack {
+            Spacer()
+            
+            // Display the current frame
+            Image("moneyFrame\(currentFrame + 1)")
+                .resizable()
+                .frame(width: 60, height: 60)
+                .onReceive(timer) { _ in
+                    // Cycle through the frames
+                    currentFrame = (currentFrame + 1) % frameCount
+                }
+            
+            Spacer()
+            
+            Text("Transferring Money...")
+                .padding()
+        }
+        .padding()
+    }
+}
+
+struct AnimatedMoneyTransferView_Previews: PreviewProvider {
+    static var previews: some View {
+        AnimatedMoneyTransferView()
+    }
 }
